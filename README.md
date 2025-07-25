@@ -4,7 +4,8 @@ Starting from 2024, records from the Biodiversity Heritage Library were deposite
 
 period | description | deposited lsids | logs (as gzipped nquads)
 --- | --- | --- | --- 
-2024-08-28 | deposit of 20k bhl records from selected publications | [lsids.txt](bhl-zenodo-deposit-2024-08-28-lsids.txt) | [logs](bhl-zenodo-deposit-2024-08-28.nq.gz)
+2024-08-28/2024-08-29 | deposit of 20k bhl records from selected publications | [lsids.txt](bhl-zenodo-deposit-2024-08-28-lsids.txt) | [logs](bhl-zenodo-deposit-2024-08-28.nq.gz)
+2024-09-03/2024-09-04 | deposit of 12k bhl records from selected publications | [lsids.txt](bhl-zenodo-deposit-2024-09-03-lsids.txt) | [logs](bhl-zenodo-deposit-2024-09-03.nq.gz)
 2025-07-14 | deposit of 2k bhl records (excl. pensoft/scielo) without license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-14-take1-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-14-take1.nq.gz) 
 2025-07-14/2025-07-24 | deposit of 200k bhl records (excl. pensoft/scielo) w/ license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-14-take2-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-14-take2.nq.gz)
 
