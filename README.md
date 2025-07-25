@@ -86,4 +86,9 @@ preston ls\
        	--remote file:///var/lib/preston/archives/bhl-blr/data,https://linker.bio
 ```
 
+## 2025-07-25
 
+Some 140k Zenodo metadata files associated with BHL parts appeared to not have been deposited for some reason, even through they were offered in the 2025-07-14 workflow.
+
+The file ```bhl-zenodo-deposit-2025-07-25-metadata-non-scielo-non-pensoft-retry-candidates.json.gz``` contains the metadata jsonline objects that were not deposited. These are records containing lsids that were *not* included in the previous successful Zenodo deposits of 2025-07-14 and 2024-08-28 .
+ 
