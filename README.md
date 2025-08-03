@@ -8,6 +8,7 @@ period | description | deposited lsids | logs (as gzipped nquads)
 2024-09-03/2024-09-04 | deposit of 12k bhl records from selected publications | [lsids.txt](bhl-zenodo-deposit-2024-09-03-lsids.txt) | [logs](bhl-zenodo-deposit-2024-09-03.nq.gz)
 2025-07-14 | deposit of 2k bhl records (excl. pensoft/scielo) without license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-14-take1-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-14-take1.nq.gz) 
 2025-07-14/2025-07-24 | deposit of 200k bhl records (excl. pensoft/scielo) w/ license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-14-take2-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-14-take2.nq.gz)
+2025-07-25/2025-08-02 | redo deposit of ~140k bhl records (excl. pensoft/scielo) w/ license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-25-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-25.nq.gz)
 
 ## 2024-08-28
 
