@@ -93,4 +93,17 @@ preston ls\
 Some 140k Zenodo metadata files associated with BHL parts appeared to not have been deposited for some reason, even through they were offered in the 2025-07-14 workflow.
 
 The file ```bhl-zenodo-deposit-2025-07-25-metadata-non-scielo-non-pensoft-retry-candidates.json.gz``` contains the metadata jsonline objects that were not deposited. These are records containing lsids that were *not* included in the previous successful Zenodo deposits of 2025-07-14 and 2024-08-28 .
- 
+
+101,328 of the 128,674 offered records were deposited, of which:
+
+
+
+Leaving 27,346 bhl records to be deposited.
+of which:
+
+* 13,747 did not have explicit licenses
+* 13,291 have 302 redirects causing http 500 error codes. For more information, see https://github.com/bio-guoda/preston/issues/354 
+* 308 empty files
+* 6,399 malformed or incomplete metadata
+* 52 bad gateway
+* 2 missing publication date
