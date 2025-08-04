@@ -101,8 +101,8 @@ The file ```bhl-zenodo-deposit-2025-07-25-metadata-non-scielo-non-pensoft-retry-
 Leaving 27,346 bhl records to be deposited.
 of which:
 
-* 13,747 did not have explicit licenses
-* 13,291 have 302 redirects causing http 500 error codes. For more information, see https://github.com/bio-guoda/preston/issues/354 
+* [13,747 did not have explicit licenses](bhl-zenodo-deposit-2025-07-25-no-license-mapping.txt)
+* [13,291 have 302 redirects causing http 500 error codes](bhl-zenodo-deposit-2025-07-25-as-of-yet-undeposited-bhl-parts-excluding-missing-license-mapping.txt). For more information, see https://github.com/bio-guoda/preston/issues/354 
 * 308 empty files
 * 6,399 malformed or incomplete metadata
 * 52 bad gateway
