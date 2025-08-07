@@ -116,7 +116,7 @@ Previously unavailable pdf parts were retried after tracking successfully associ
 First, track the zenodo metadata in json line format -  
 
 ```
-cat bhl-zenodo-deposit-2025-08-07-metadata-non-scielo-non-pensoft.json.gz\
+cat bhl-zenodo-deposit-2025-08-07-metadata-non-scielo-non-pensoft-retry-candidates.json.gz\
  | gunzip\
  | preston track\
  --algo md5\
