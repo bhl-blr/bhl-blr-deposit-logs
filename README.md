@@ -9,6 +9,7 @@ period | description | deposited lsids | logs (as gzipped nquads)
 2025-07-14 | deposit of 2k bhl records (excl. pensoft/scielo) without license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-14-take1-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-14-take1.nq.gz) 
 2025-07-14/2025-07-24 | deposit of 200k bhl records (excl. pensoft/scielo) w/ license mapping | [lsids.txt](bhl-zenodo-deposit-2025-07-14-take2-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-14-take2.nq.gz)
 2025-07-25/2025-08-02 | redo deposit of ~140k bhl records (excl. pensoft/scielo) w/ license mapping, with 101k bhl records being deposited addition to those already present in Zenodo | [lsids.txt](bhl-zenodo-deposit-2025-07-25-lsids.txt) | [logs](bhl-zenodo-deposit-2025-07-25.nq.gz)
+2025-08-07/ | redo deposit of ~10k bhl records (excl. pensoft/scielo) after they were made available again by BHL see [issue 354](https://github.com/bio-guoda/preston/issues/354) | TBA | TBA
 
 ## 2024-08-28
 
@@ -107,3 +108,36 @@ of which:
 * 6,399 malformed or incomplete metadata
 * 52 bad gateway
 * 2 missing publication date
+
+## 2025-08-07
+
+Previously unavailable pdf parts were retried after tracking successfully associating their pdf content using their bhl part pdf URL.
+
+First, track the zenodo metadata in json line format -  
+
+```
+cat bhl-zenodo-deposit-2025-08-07-metadata-non-scielo-non-pensoft.json.gz\
+ | gunzip\
+ | preston track\
+ --algo md5\
+ --data-dir prod-zenodo-data-20250807
+```
+
+Then offer them for deposit them into Zenodo.
+
+```
+#/bin/bash
+#
+#
+
+preston ls\
+        --algo md5\
+        --data-dir prod-zenodo-data-20250807\
+ | preston zenodo\
+        --explicit-license-only\
+        --license hash://sha256/f0005cfa72a46c54c2d2386a3e7116f714e295b9740561648142308ba32ed1b7\
+        --data-dir prod-zenodo-data-20250807\
+        --no-cache\
+        --remote file:///var/lib/preston/archives/bhl-blr/data,https://linker.bio
+```
+
